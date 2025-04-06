@@ -71,19 +71,14 @@ church_app/
 - `PUT /api/profile/` – Update profile details
 
 ### 📆 Events
-- `GET /api/events/` – List events
-- `GET /api/events/<id>/` – View event detail
-- `POST /api/events/register/` – Register for an event
+- `GET /api/events/` – Register for an event events
 
 ### 🎓 Education
 - `GET /api/education/` – View all content
-- `GET /api/education/<id>/` – View single content
-- `POST /api/education/upload/` – Upload content (teacher only)
+
 
 ### 💳 Donations
 - `POST /api/donations/` – Make one-time donation
-- `POST /api/donations/recurring/` – Setup recurring donation
-- `GET /api/donations/history/` – View user’s donation history
 
 ---
 
