@@ -12,7 +12,7 @@ User = get_user_model()
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [AllowAny]  # Allow unauthenticated access to registration
+    permission_classes = [AllowAny]  
 
     def perform_create(self, serializer):
         password = self.request.data.get('password')
@@ -21,7 +21,7 @@ class RegisterView(generics.CreateAPIView):
         user.save()
 
 class ProfileView(APIView):
-    permission_classes = [IsAuthenticated]  # Ensure authentication is required for profile access
+    permission_classes = [IsAuthenticated]  
 
     def get(self, request):
         serializer = UserSerializer(request.user)
